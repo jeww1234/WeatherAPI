@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import WeatherBox from './component/WeatherBox';
 import WeatherButton from './component/WeatherButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
