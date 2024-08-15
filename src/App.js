@@ -34,8 +34,8 @@ function App() {
 
 
   useEffect(()=>{
-    getCurrentLocation()
-  },[]);
+    getCurrentLocation();
+  },);
 
   
   return (
