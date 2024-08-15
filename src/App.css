@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+body{
+  background: url(https://png.pngtree.com/background/20210711/original/pngtree-hand-drawn-blue-sky-white-clouds-weather-forecast-illustration-background-picture-image_1137685.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:  3px solid black;
+  padding: 10vh;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
