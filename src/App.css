@@ -14,10 +14,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border:  3px solid black;
+  border:  3px solid rgb(137, 237, 255);
   padding: 10vh;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(59, 242, 255, 0.5);
 }
 .button{
   width: 75px; height: 50px;
@@ -27,6 +27,12 @@ body{
 .weather-container{
   width: 60vh;
 }
+.text{
+  font-size: 5vh;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  }
 
 @media screen and (max-width:575px) {
   .box{
@@ -34,18 +40,30 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   .weather-box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:  3px solid black;
-    padding: 10vh;
+    border:  3px solid rgb(233, 105, 0);
+    padding: 2vh;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(253, 122, 0, 0.2);
   }
   .weather-container{
-    width: 60vh;
+    width: 45vh;
+  }
+  .text{
+    font-size: 4.5vh;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    padding: 10px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  }
+  .button{
+    height: 50px;
+    width: 10vh;
+    margin-top: 10px;
   }
 }
