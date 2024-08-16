@@ -1,15 +1,14 @@
 import React from 'react'
-import { Button, Col, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const WeatherButton = () => {
   return (
-    <Row className='button-box'>
-        <Col sm={3} xs={6}><Button variant="warning" className='button' size="sm">Current Location</Button>{' '}</Col>
-        <Col sm={3} xs={6}><Button variant="warning" className='button' size="sm">Paris</Button>{' '}</Col>
-        <Col sm={3} xs={6}><Button variant="warning" className='button' size="sm">New York</Button>{' '}</Col>
-        <Col sm={3} xs={6}><Button variant="warning" className='button' size="sm">Japan</Button>{' '}</Col>
-    </Row>
-    
+    <div className='button-box'>
+        <Button variant="warning" className='button' size="sm">Current Location</Button>{' '}
+        <Button variant="warning" className='button' size="sm">Paris</Button>{' '}
+        <Button variant="warning" className='button' size="sm">New York</Button>{' '}
+        <Button variant="warning" className='button' size="sm">New York</Button>{' '}
+    </div>
   )
 }
 

@@ -6,6 +6,7 @@ import WeatherButton from './component/WeatherButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 //앱 실행되자마자 현재위치기반의 날씨가 보인다.
 //날씨정보에는 도시, 섭시, 화씨, 날씨상태
