@@ -9,7 +9,7 @@ const WeatherBox = ({weather}) => {
     <Container className='weather-box'>
       <div className='text'>{weather?.name}</div>
       <div className='text'>{stemp}&#176;C / {hhtemp}&#176;F</div>
-      <p className='text'>{weather?.weather[0].description}</p>
+      <p className='text2'>{weather?.weather[0].description}</p>
     </Container>
   )
 }

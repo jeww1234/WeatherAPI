@@ -22,12 +22,15 @@ body{
 .button{
   height: 6.5vh;
   width: 13vh;
-  margin-top: 10px;
+  margin: 5px;
   font-weight: bolder;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 .button:hover{
   scale: 106%;
+}
+.button-box{
+  margin: 5px;
 }
 .weather-container{
   width: 60vh;
@@ -66,12 +69,25 @@ body{
     padding: 10px;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   }
+  .text2{
+    font-size: 4vh;
+    font-weight: bolder;
+    color: rgb(54, 63, 55);
+    font-weight: bolder;
+    padding: 10px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  }
   .button{
     height: 8vh;
     width: 11vh;
     margin-top: 10px;
     font-weight: bolder;
     -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+  }
+  .button-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
 }
