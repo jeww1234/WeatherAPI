@@ -19,3 +19,17 @@ body{
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.4);
 }
+.button{
+  margin-top: 20px;
+}
+.weather-container{
+  width: 70vh;
+}
+
+@media screen and (max-width:580px) {
+  
+  .weather-container{
+    width: 25vh;
+  }
+
+}

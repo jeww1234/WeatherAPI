@@ -4,9 +4,9 @@ import { Button } from 'react-bootstrap';
 const WeatherButton = () => {
   return (
     <div>
-        <Button variant="warning">Current Location</Button>{' '}
-        <Button variant="warning">Paris</Button>{' '}
-        <Button variant="warning">New York</Button>{' '}
+        <Button variant="warning" className='button'>Current Location</Button>{' '}
+        <Button variant="warning" className='button'>Paris</Button>{' '}
+        <Button variant="warning" className='button'>New York</Button>{' '}
     </div>
   )
 }
