@@ -20,7 +20,7 @@ body{
   background-color: rgba(59, 242, 255, 0.8);
 }
 .button{
-  height: 6.5vh;
+  height: 6.3vh;
   width: 13vh;
   margin: 5px;
   font-weight: bolder;
@@ -65,7 +65,7 @@ body{
     background-color: rgba(253, 122, 0, 0.8);
   }
   .weather-container{
-    width: 45vh;
+    width: 38vh;
   }
   .text{
     font-size: 4.8vh;
@@ -85,8 +85,6 @@ body{
   }
   .button{
     height: 8vh;
-    width: 11vh;
-    margin-top: 10px;
     font-weight: bolder;
     -webkit-text-stroke: 0.3px rgb(0, 0, 0);
   }
@@ -94,6 +92,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   
 }
