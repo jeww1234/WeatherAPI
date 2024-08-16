@@ -33,7 +33,7 @@ body{
   margin: 5px;
 }
 .weather-container{
-  width: 60vh;
+  width: 80vh;
 }
 .text{
   font-size: 5vh;
@@ -41,6 +41,12 @@ body{
     font-weight: bolder;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   }
+  .text2{
+    font-size: 3.5vh;
+      color: rgb(0, 0, 0);
+      font-weight: bolder;
+      -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    }
 
 @media screen and (max-width:575px) {
   .box{
