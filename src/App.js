@@ -29,12 +29,12 @@ function App() {
   },[])
 
 
-  const getWeatherByCurrentLocation= async(lat, lon)=>{
+  const getWeatherByCurrentLocation= useCallback(async(lat, lon)=>{
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0b455b67f7ff2cd45dcccd33831a3728&units=metric`
     let response = await fetch(url);
     let data = await response.json();
     setWeather(data)
-  }
+  },[])
 
   const getWeatherByCity= useCallback(async()=>{
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0b455b67f7ff2cd45dcccd33831a3728&units=metric`
