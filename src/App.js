@@ -18,7 +18,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [weather,setWeather] = useState(null)
-  const cities=['Curren Location','Paris','New York', 'Tokto', 'Seoul']
+  const [city, setCity]=useState('')
+  const cities=['paris','new york', 'tokyo', 'seoul']
   const getCurrentLocation=()=>{
     navigator.geolocation.getCurrentPosition((position)=>{
       let lat = position.coords.latitude
@@ -35,18 +36,26 @@ function App() {
     setWeather(data)
   }
 
-
+  const getWeatherByCity= async()=>{
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0b455b67f7ff2cd45dcccd33831a3728&units=metric`
+    let response = await fetch(url)
+    let data = await response.json()
+    setWeather(data)
+  }
   useEffect(()=>{
-    getCurrentLocation();
-  },);
+    if(city === ""){
+      getCurrentLocation();
+    }else{
+      getWeatherByCity()
+    }
+  },[city]);
 
-  
   return (
     <div className='box'>
       <div className='weather-container'>
       <WeatherBox weather={weather}/>
       </div>
-      <WeatherButton cities={cities}/>
+      <WeatherButton cities={cities} setCity={setCity} getWeatherByCurrentLocation={getCurrentLocation}/>
     </div>
   );
 }

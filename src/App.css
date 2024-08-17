@@ -76,12 +76,12 @@ body{
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   }
   .text2{
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-weight: bolder;
     color: rgb(54, 63, 55);
     font-weight: bolder;
     padding: 10px;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
   }
   .button{
     height: 8vh;
