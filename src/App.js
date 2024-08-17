@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 // import { useState } from 'react';
 import WeatherBox from './component/WeatherBox';
 import WeatherButton from './component/WeatherButton';
@@ -20,13 +20,13 @@ function App() {
   const [weather,setWeather] = useState(null)
   const [city, setCity]=useState('')
   const cities=['paris','new york', 'tokyo', 'seoul']
-  const getCurrentLocation=()=>{
+  const getCurrentLocation=useCallback(()=>{
     navigator.geolocation.getCurrentPosition((position)=>{
       let lat = position.coords.latitude
       let lon = position.coords.longitude
       getWeatherByCurrentLocation(lat, lon)
     });
-  }
+  },[])
 
 
   const getWeatherByCurrentLocation= async(lat, lon)=>{
@@ -36,12 +36,12 @@ function App() {
     setWeather(data)
   }
 
-  const getWeatherByCity= async()=>{
+  const getWeatherByCity= useCallback(async()=>{
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0b455b67f7ff2cd45dcccd33831a3728&units=metric`
     let response = await fetch(url)
     let data = await response.json()
     setWeather(data)
-  }
+  },[city])
   useEffect(()=>{
     if(city === ""){
       getCurrentLocation();
