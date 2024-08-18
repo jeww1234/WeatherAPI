@@ -30,6 +30,10 @@ body{
   scale: 106%;
 }
 .button-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 5px;
 }
 .weather-container{

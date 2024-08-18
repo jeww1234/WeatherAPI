@@ -2,8 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 
 const WeatherBox = ({weather}) => {
-  console.log("1",weather)
-  let stemp = Math.floor(weather?.main.temp)
+  let stemp = Math.floor(weather?.main?.temp)
   let hhtemp = Math.floor((stemp * 1.8)+32)
   return (
     <Container className='weather-box'>
