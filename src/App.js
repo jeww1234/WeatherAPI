@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState} from "react";
 // import { useState } from 'react';
 import WeatherBox from "./component/WeatherBox";
 import WeatherButton from "./component/WeatherButton";
