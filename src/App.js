@@ -127,10 +127,10 @@ const App = () => {
     };
 
     if (city == null) {
-      setLoading(false);
+      setLoading(true);
       getCurrentLocation();
     } else {
-      setLoading(false);
+      setLoading(true);
       getWeatherByCity();
     }
   }, [city, getCurrentLocation]);
